@@ -6,13 +6,8 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<?php 
-	if ( is_page_template( 'page-fullwidth.php' ) )
+	//if case deleted cause not working
 		the_post_thumbnail( 'sparkling-featured-fullwidth', array( 'class' => 'single-featured' ));
-	else
-		the_post_thumbnail( 'sparkling-featured', array( 'class' => 'single-featured' ));
-		
-				//test purpose the if case seems to not trigger or the fullwidth does not link the correct image...
-				the_post_thumbnail( 'sparkling-featured-fullwidth', array( 'class' => 'single-featured' ));
 	?>
 	<div class="post-inner-content">
 		<header class="entry-header page-header">
