@@ -12,7 +12,7 @@
 					the_post_thumbnail( 'sparkling-featured-fullwidth', array( 'class' => 'single-featured' ));
 				else
 					the_post_thumbnail( 'sparkling-featured', array( 'class' => 'single-featured' ));
-				//test purpose the if case seems to not trigger or the fullwidth does not link the correct image...
+					
 				the_post_thumbnail( 'sparkling-featured-fullwidth', array( 'class' => 'single-featured' ));
 				?>
 				
