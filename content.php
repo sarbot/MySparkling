@@ -8,7 +8,6 @@
 	<div class="blog-item-wrap">
 				<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" >
 				<?php
-					//the_post_thumbnail( 'sparkling-featured-fullwidth', array( 'class' => 'single-featured' ));
 				?>
 				
 			</a>
@@ -18,6 +17,8 @@
 				<h2 class="entry-title"><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
 
 				<?php if ( 'post' == get_post_type() ) : ?>
+				<?php	
+				?>
 				<div class="entry-meta">
 					<?php sparkling_posted_on(); ?><?php if ( ! post_password_required() && ( comments_open() || '0' != get_comments_number() ) ) : ?>
 				<span class="comments-link"><i class="fa fa-comment-o"></i><?php comments_popup_link( esc_html__( 'Leave a comment', 'sparkling' ), esc_html__( '1 Comment', 'sparkling' ), esc_html__( '% Comments', 'sparkling' ) ); ?></span>
@@ -48,6 +49,8 @@
 			</div><!-- .entry-summary -->
 			<?php else : ?>
 			<div class="entry-content">
+
+					<?php the_post_thumbnail( 'thumb', array( 'class' => 'pull-right' )); ?>
 
 				<?php
 				if ( get_theme_mod( 'sparkling_excerpts' ) == 1 ) :
