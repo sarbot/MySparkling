@@ -7,7 +7,7 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<?php 
 	//if case deleted cause not working
-		//the_post_thumbnail( 'sparkling-featured-fullwidth', array( 'class' => 'single-featured' ));
+		the_post_thumbnail( 'sparkling-featured-fullwidth', array( 'class' => 'single-featured' ));
 	?>
 	<div class="post-inner-content">
 		<header class="entry-header page-header">
