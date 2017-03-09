@@ -7,7 +7,7 @@
 ?>
 
 <?php 
-	the_post_thumbnail( 'sparkling-featured-fullwidth', array( 'class' => 'single-featured' ));
+	//the_post_thumbnail( 'sparkling-featured-fullwidth', array( 'class' => 'single-featured' ));
 ?>
 
 <div class="post-inner-content">
